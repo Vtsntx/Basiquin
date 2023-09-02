@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="cabeçalho" id="cabeçalho">
+        <button onclick="sidebarr()" class="btn_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo_cabeçalho">
+            <img src="brasao-do-ceara.png" class="logo" alt="" />
+        </div>
+        <div class="navegacao" id="navegacao">
+            <button onclick="sidebarr()" class="btn_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <a href="#content"><span class="icons"><ion-icon name="home-outline"></ion-icon></span></a>
+            
+            <a href="#calculadora"><span class="icons"><ion-icon name="calculator-outline"></ion-icon> </span></a>
+            
+                </span></a>
+            </span></a>
+
+        </div>
+    </div>
+    <div onclick="closebarr()" class="content" id="content">
+        <main class="sobre">
+           
+            <div class="texto">
+                <span class="text">
+                    <p>Sou um dev iniciante aprendendo a cada dia sobre esse mar de conhecimento q é a progamação</p>
+                </span>
+            </div>
+        </main>
+        </div>
+            <div><img class="dev" src="./Img/4884785.jpg" alt="error"></div>
+        </div>
+
+            <div class="fundo">
+              
+                <div class="calculadora">
+                    <h1>Calculadora</h1>
+                    <p id="resultado"></p>
+<section id="calculadora"></section>
+                        <table>
+                            
+                            <tr>
+                                <td><button class="botao" onclick="clean()">C</button></td>
+                                <td><button class="botao" onclick="back()">></button>
+                                </td>
+                                <td><button class="botao" onclick="insert('/')">/</button></td>
+                                <td><button class="botao" onclick="insert('*')">X</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('7')">7</button></td>
+                                <td><button class="botao" onclick="insert('8')">8</button></td>
+                                <td><button class="botao" onclick="insert('9')">9</button></td>
+                                <td><button class="botao" onclick="insert('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('4')">4</button></td>
+                                <td><button class="botao" onclick="insert('5')">5</button></td>
+                                <td><button class="botao" onclick="insert('6')">6</button></td>
+                                <td><button class="botao" onclick="insert('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('1')">1</button></td>
+                                <td><button class="botao" onclick="insert('2')">2</button></td>
+                                <td><button class="botao" onclick="insert('3')">3</button></td>
+                                <td rowspan="2"><button class="botao" style="height: 106px;"
+                                        onclick="calcular()">=</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="botao" style="width: 106px;"
+                                        onclick="insert('0')">0</button></td>
+                                <td><button class="botao" onclick="insert('.')">.</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+               
+                <script src="script.js"></script>
+
+            
+        
+
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="./script.js"></script>
+</body>
+
+</html>
